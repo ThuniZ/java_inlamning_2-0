@@ -70,16 +70,17 @@ eller båda värdena inte är ett nummer ska en alertbox med meddelandet "Jag ka
 //Done
 function multiplier(valueOne, valueTwo) {
   //alert("Replace this alert with a solution");
-  let sum = valueOne * valueTwo
+  let sum 
   
-  console.log(typeof valueOne);
-  console.log(sum);
+  
 
-  if (sum) {
-    alert("Produkten är: " +sum)
-  } else {
+  if (typeof valueOne === "string" || typeof valueTwo === "string"){
     alert("Jag kan bara multiplicera nummer!")
+  } else {
+    let sum = valueOne * valueTwo;
+    alert("Produkten är: " +sum)
   };
+
 
 
 }
